@@ -2,107 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Personal portfolio of Abiral — IT student, programmer and poet.">
-<title>Abiral — About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Abiral — IT student, programmer and writer.">
+<title>Abiral — Welcome to My World</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+:root{--bg:#080808;--fg:#f5f5f2;--muted:#7c7c7b;--line:rgba(255,255,255,.13)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b0d12;color:#f5f7fb;line-height:1.65}
-a{color:inherit;text-decoration:none}
-nav{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid #222733}
-.nav-inner{max-width:1050px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;letter-spacing:.5px}
-.nav-links{display:flex;gap:18px;font-size:.92rem;color:#b9c0ce}
-.nav-links a:hover{color:#fff}
-main{max-width:1050px;margin:auto;padding:0 22px}
-.hero{min-height:88vh;display:flex;align-items:center;padding:80px 0}
-.eyebrow{color:#98a2b3;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;margin-bottom:16px}
-h1{font-size:clamp(3rem,9vw,6.3rem);line-height:.95;letter-spacing:-4px;max-width:850px}
-.gradient{background:linear-gradient(135deg,#fff,#aeb8ff 55%,#d5a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:690px;color:#b5bcc9;font-size:1.12rem;margin-top:25px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{padding:12px 18px;border:1px solid #303644;border-radius:999px;background:#151923}
-.btn.primary{background:#fff;color:#0b0d12;border-color:#fff;font-weight:700}
-section{padding:80px 0;border-top:1px solid #202530}
-.section-title{font-size:2rem;margin-bottom:28px}
-.section-intro{color:#aeb6c5;max-width:720px;margin-top:-15px;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:#11141b;border:1px solid #242a35;border-radius:20px;padding:24px}
-.card h3{margin-bottom:9px}
-.card p{color:#abb3c1}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.tag{font-size:.82rem;padding:7px 10px;border:1px solid #2d3441;border-radius:999px;color:#cbd2df;background:#151923}
-.project{min-height:170px}
-.poems{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.poem{background:#10131a;border:1px solid #272d39;border-radius:20px;padding:26px}
-.poem h3{font-family:Georgia,serif;font-size:1.3rem;margin-bottom:15px}
-.poem p{white-space:pre-line;color:#d4d8e1;font-family:Georgia,serif;font-size:1.02rem}
-.quote{border-left:3px solid #9ea8ff;padding-left:18px;color:#ced4df}
-.contact{display:flex;gap:12px;flex-wrap:wrap}
-footer{text-align:center;color:#7f8795;padding:35px 22px 55px;font-size:.9rem}
-@media(max-width:800px){.grid,.poems{grid-template-columns:1fr}.nav-links{display:none}.hero{min-height:75vh;padding:55px 0}h1{letter-spacing:-2px}}
+body{background:var(--bg);color:var(--fg);font-family:'DM Sans',Arial,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.page{min-height:100vh;position:relative;background:radial-gradient(circle at 50% 48%,rgba(255,255,255,.035),transparent 31%),#080808}
+header{position:absolute;inset:0 0 auto 0;z-index:5;height:92px;display:flex;align-items:center;justify-content:space-between;padding:26px 42px}
+.monogram{font-family:'Playfair Display',serif;font-size:58px;line-height:.6;font-weight:500;letter-spacing:-11px;width:76px}
+.menu{width:38px;height:30px;display:flex;flex-direction:column;justify-content:center;gap:7px;cursor:pointer}
+.menu span{height:2px;width:31px;background:#fff;display:block}
+.menu span:last-child{width:21px;margin-left:10px}
+.hero{height:100svh;min-height:700px;display:flex;align-items:flex-end;justify-content:center;padding:0 25px 118px;text-align:center;position:relative}
+.hero-inner{transform:translateY(8vh)}
+.kicker{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#777;margin-bottom:19px}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(6rem,24vw,14.5rem);line-height:.78;letter-spacing:.5px;white-space:nowrap}
+.tagline{margin-top:27px;font-size:clamp(18px,4.6vw,28px);letter-spacing:1px;color:#7e7e7e}
+.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:23px;height:23px;border-left:3px solid #f5f5f2;border-bottom:3px solid #f5f5f2;transform:translateX(-50%) rotate(-45deg)}
+.content{max-width:1050px;margin:0 auto;padding:95px 24px}
+section{padding:90px 0;border-top:1px solid var(--line)}
+.section-kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#666;margin-bottom:18px}
+.section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(3.1rem,9vw,6rem);font-weight:400;line-height:.9;margin-bottom:25px}
+.intro{max-width:760px;color:#aaa;font-size:18px;line-height:1.75}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+.card{border:1px solid #252525;background:#0d0d0d;padding:28px;border-radius:2px}
+.card h3{font-size:20px;font-weight:600;margin-bottom:9px}
+.card p{color:#929292;line-height:1.6}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}
+.tag{border:1px solid #2a2a2a;padding:6px 10px;font-size:12px;color:#aaa}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+.project{border-top:1px solid #333;padding:24px 0}
+.project h3{font-size:23px;margin-bottom:8px}
+.project p{color:#8e8e8e;line-height:1.6}
+.poems{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}
+.poem{border:1px solid #252525;padding:29px;background:#0c0c0c}
+.poem h3{font-family:'Playfair Display',serif;font-size:25px;font-weight:500;margin-bottom:17px}
+.poem p{font-family:'Playfair Display',serif;font-size:16px;line-height:1.85;color:#c9c9c6;white-space:pre-line}
+.contact{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{border:1px solid #3a3a3a;padding:13px 18px;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+.btn:hover{background:#fff;color:#000}
+footer{text-align:center;color:#5f5f5f;padding:34px 24px 55px;border-top:1px solid var(--line);font-size:12px;letter-spacing:1px}
+@media(max-width:800px){
+header{padding:24px 23px;height:78px}.monogram{font-size:52px}
+.hero{padding-bottom:100px;min-height:100svh}.hero-inner{transform:translateY(5vh)}
+h1{font-size:clamp(5.2rem,25vw,8.5rem);white-space:normal;line-height:.8}
+.kicker{font-size:10px;letter-spacing:2.5px}.tagline{font-size:17px;margin-top:23px}
+.content{padding:55px 22px}.cards,.projects,.poems{grid-template-columns:1fr}
+section{padding:60px 0}.card{padding:24px}
+}
 </style>
 </head>
 <body>
-<nav>
-  <div class="nav-inner">
-    <div class="logo">ABIRAL.</div>
-    <div class="nav-links">
-      <a href="#about">About</a><a href="#learning">Learning</a><a href="#projects">Projects</a><a href="#poetry">Poetry</a><a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
+<div class="page">
+<header>
+  <a class="monogram" href="#top" aria-label="Home">A</a>
+  <a class="menu" href="#about" aria-label="Explore"><span></span><span></span></a>
+</header>
 
 <main>
 <section class="hero" id="top">
-  <div>
-    <div class="eyebrow">IT Student • Programmer • Writer</div>
-    <h1>Hi, I'm <span class="gradient">Abiral.</span></h1>
-    <p>I’m an IT student building my skills in programming and web development while keeping a space for the other side of me — writing, thinking, and turning thoughts into poems.</p>
-    <div class="buttons">
-      <a class="btn primary" href="#about">Get to know me</a>
-      <a class="btn" href="#poetry">Read my poems</a>
-    </div>
+  <div class="hero-inner">
+    <div class="kicker">IT Student · Programmer · Writer</div>
+    <h1>ABIRAL</h1>
+    <div class="tagline">WELCOME TO MY WORLD</div>
   </div>
+  <a class="scroll" href="#about" aria-label="Scroll down"></a>
 </section>
 
+<div class="content">
 <section id="about">
-  <div class="section-title">About Me</div>
-  <p class="section-intro">A little about the person behind the code.</p>
-  <div class="card">
-    <p>I’m currently studying Information Technology and exploring the parts of tech that interest me most — programming, Python, websites, software and the process of turning an idea into something that actually works.</p>
-    <br>
-    <p>Outside of technology, I enjoy writing. Poetry is where I put thoughts that are sometimes difficult to explain directly. This page is a small collection of what I’m learning, building and writing along the way.</p>
-  </div>
+  <div class="section-kicker">01 / About</div>
+  <div class="section-title">A little about me</div>
+  <p class="intro">I’m studying Information Technology and exploring programming, Python, web development, software and practical IT. Alongside technology, I write poetry — mostly when a thought feels too complicated to explain any other way.</p>
 </section>
 
 <section id="learning">
-  <div class="section-title">What I'm Studying</div>
-  <p class="section-intro">The areas I’m currently developing.</p>
-  <div class="grid">
-    <div class="card"><h3>🐍 Python</h3><p>Learning programming fundamentals, problem solving, logic and building small programs.</p><div class="tags"><span class="tag">Python</span><span class="tag">Logic</span><span class="tag">Problem solving</span></div></div>
-    <div class="card"><h3>🌐 Web Development</h3><p>Learning how websites are structured, styled and made interactive.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Web</span></div></div>
-    <div class="card"><h3>💻 Programming & IT</h3><p>Exploring software development, programming concepts, networking and practical IT work.</p><div class="tags"><span class="tag">Java</span><span class="tag">C#</span><span class="tag">Networking</span></div></div>
+  <div class="section-kicker">02 / Learning</div>
+  <div class="section-title">What I’m into</div>
+  <div class="cards">
+    <article class="card"><h3>Python</h3><p>Programming fundamentals, logic, problem solving and building small programs.</p><div class="tags"><span class="tag">PYTHON</span><span class="tag">LOGIC</span></div></article>
+    <article class="card"><h3>Web Development</h3><p>Building pages and learning how structure, styling and interaction come together.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div></article>
+    <article class="card"><h3>Programming & IT</h3><p>Working through Java, C#, networking and the practical side of software development.</p><div class="tags"><span class="tag">JAVA</span><span class="tag">C#</span><span class="tag">NETWORKING</span></div></article>
   </div>
 </section>
 
 <section id="projects">
-  <div class="section-title">Projects & Practice</div>
-  <p class="section-intro">A growing record of things I’ve worked on while studying.</p>
-  <div class="grid">
-    <div class="card project"><h3>🍔 Food Delivery Management System</h3><p>A console-based programming project focused on menus, food items, delivery staff and object-oriented programming concepts.</p></div>
-    <div class="card project"><h3>📚 Community Library</h3><p>A student project exploring software structure, features and a practical web/software idea for managing a community library.</p></div>
-    <div class="card project"><h3>🧩 Web & Programming Practice</h3><p>Small exercises and coursework covering HTML, CSS, Java, C#, programming fundamentals and IT concepts.</p></div>
+  <div class="section-kicker">03 / Projects</div>
+  <div class="section-title">Things I’ve built</div>
+  <div class="projects">
+    <article class="project"><h3>Food Delivery Management System</h3><p>A console-based project covering menus, food items, delivery staff and object-oriented programming.</p></article>
+    <article class="project"><h3>Community Library</h3><p>A student project exploring a practical library system and software structure.</p></article>
+    <article class="project"><h3>Web & Programming Practice</h3><p>Coursework and smaller exercises across HTML, CSS, Java, C# and programming fundamentals.</p></article>
+    <article class="project"><h3>More to come</h3><p>This portfolio will keep changing as I learn, build and experiment.</p></article>
   </div>
-  <div class="buttons">
-    <a class="btn primary" href="https://github.com/ddinpp" target="_blank" rel="noopener">View my GitHub ↗</a>
-  </div>
+  <div class="contact"><a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a></div>
 </section>
 
 <section id="poetry">
+  <div class="section-kicker">04 / Writing</div>
   <div class="section-title">Poetry</div>
-  <p class="section-intro quote">“Sometimes the things we cannot explain are the things we end up writing.”</p>
+  <p class="intro" style="margin-bottom:10px">A few thoughts that became poems.</p>
   <div class="poems">
     <article class="poem"><h3>Between the Past and Present</h3><p>The head that refuses to live in the present,
 the heart that echoes the voices already heard.</p></article>
@@ -124,15 +129,14 @@ Teach us to live with our soul light.</p></article>
 </section>
 
 <section id="contact">
-  <div class="section-title">Find Me</div>
-  <p class="section-intro">A few places to follow what I’m building or share with me.</p>
-  <div class="contact">
-    <a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a>
-    <a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
-  </div>
+  <div class="section-kicker">05 / Elsewhere</div>
+  <div class="section-title">Find me</div>
+  <p class="intro">More work, experiments and updates will live here as I keep building.</p>
+  <div class="contact"><a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></div>
 </section>
+</div>
 </main>
-
-<footer>Made by Abiral · Learning, building & writing.</footer>
+<footer>ABIRAL · LEARNING, BUILDING & WRITING</footer>
+</div>
 </body>
 </html>
