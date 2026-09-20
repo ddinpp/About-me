@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#080808">
-<meta name="description" content="Abiral — IT student, programmer and writer.">
+<meta name="description" content="Abiral — a little about me, what I study, what I build and what I write.">
 <title>Abiral — Welcome to My World</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
@@ -13,48 +13,45 @@
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font-family:'DM Sans',Arial,sans-serif;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-.page{min-height:100vh;position:relative;background:radial-gradient(circle at 50% 48%,rgba(255,255,255,.035),transparent 31%),#080808}
-header{position:absolute;inset:0 0 auto 0;z-index:5;height:92px;display:flex;align-items:center;justify-content:space-between;padding:26px 42px}
-.monogram{font-family:'Playfair Display',serif;font-size:58px;line-height:.6;font-weight:500;letter-spacing:-11px;width:76px}
+.page{min-height:100vh;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.035),transparent 30%),#080808}
+header{position:absolute;inset:0 0 auto 0;z-index:20;height:92px;display:flex;align-items:center;justify-content:space-between;padding:26px 42px}
+.monogram{font-family:'Playfair Display',serif;font-size:58px;line-height:.6;font-weight:500}
 .menu{width:38px;height:30px;display:flex;flex-direction:column;justify-content:center;gap:7px;cursor:pointer}
-.menu span{height:2px;width:31px;background:#fff;display:block}
-.menu span:last-child{width:21px;margin-left:10px}
-.hero{height:100svh;min-height:700px;display:flex;align-items:flex-end;justify-content:center;padding:0 25px 118px;text-align:center;position:relative}
-.hero-inner{transform:translateY(8vh)}
+.menu span{height:2px;width:31px;background:#fff;display:block}.menu span:last-child{width:21px;margin-left:10px}
+.hero{height:100svh;min-height:700px;display:flex;align-items:flex-end;justify-content:center;padding:0 25px 115px;text-align:center;position:relative}
+.hero-inner{transform:translateY(5vh)}
 .kicker{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#777;margin-bottom:19px}
 h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(6rem,24vw,14.5rem);line-height:.78;letter-spacing:.5px;white-space:nowrap}
-.tagline{margin-top:27px;font-size:clamp(18px,4.6vw,28px);letter-spacing:1px;color:#7e7e7e}
-.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:23px;height:23px;border-left:3px solid #f5f5f2;border-bottom:3px solid #f5f5f2;transform:translateX(-50%) rotate(-45deg)}
-.content{max-width:1050px;margin:0 auto;padding:95px 24px}
-section{padding:90px 0;border-top:1px solid var(--line)}
+.tagline{margin-top:27px;font-size:clamp(18px,4.6vw,28px);letter-spacing:1px;color:#808080}
+.scroll{position:absolute;bottom:29px;left:50%;width:23px;height:23px;border-left:3px solid #f5f5f2;border-bottom:3px solid #f5f5f2;transform:translateX(-50%) rotate(-45deg)}
+.content{max-width:1050px;margin:0 auto;padding:0 24px}
+section{padding:95px 0;border-top:1px solid var(--line)}
 .section-kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#666;margin-bottom:18px}
-.section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(3.1rem,9vw,6rem);font-weight:400;line-height:.9;margin-bottom:25px}
-.intro{max-width:760px;color:#aaa;font-size:18px;line-height:1.75}
+.section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(3.2rem,9vw,6rem);font-weight:400;line-height:.9;margin-bottom:25px}
+.intro{max-width:790px;color:#aaa;font-size:18px;line-height:1.8}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
-.card{border:1px solid #252525;background:#0d0d0d;padding:28px;border-radius:2px}
-.card h3{font-size:20px;font-weight:600;margin-bottom:9px}
-.card p{color:#929292;line-height:1.6}
-.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}
-.tag{border:1px solid #2a2a2a;padding:6px 10px;font-size:12px;color:#aaa}
-.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
-.project{border-top:1px solid #333;padding:24px 0}
-.project h3{font-size:23px;margin-bottom:8px}
-.project p{color:#8e8e8e;line-height:1.6}
-.poems{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}
-.poem{border:1px solid #252525;padding:29px;background:#0c0c0c}
-.poem h3{font-family:'Playfair Display',serif;font-size:25px;font-weight:500;margin-bottom:17px}
-.poem p{font-family:'Playfair Display',serif;font-size:16px;line-height:1.85;color:#c9c9c6;white-space:pre-line}
-.contact{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
-.btn{border:1px solid #3a3a3a;padding:13px 18px;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
-.btn:hover{background:#fff;color:#000}
+.card{border:1px solid #252525;background:#0d0d0d;padding:28px}
+.card h3{font-size:20px;font-weight:600;margin-bottom:10px}.card p{color:#929292;line-height:1.65}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}.tag{border:1px solid #2a2a2a;padding:6px 10px;font-size:12px;color:#aaa}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}.project{border-top:1px solid #333;padding:24px 0}
+.project h3{font-size:23px;margin-bottom:8px}.project p{color:#8e8e8e;line-height:1.65}
+.poems{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.poem{border:1px solid #252525;padding:29px;background:#0c0c0c}
+.poem h3{font-family:'Playfair Display',serif;font-size:25px;font-weight:500;margin-bottom:17px}.poem p{font-family:'Playfair Display',serif;font-size:16px;line-height:1.9;color:#c9c9c6;white-space:pre-line}
+.contact{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{border:1px solid #3a3a3a;padding:13px 18px;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.btn:hover{background:#fff;color:#000}
+.timeline{margin-top:30px;border-left:1px solid #343434;padding-left:24px}.timeline-item{margin-bottom:30px}.timeline-item:last-child{margin-bottom:0}
+.timeline-item strong{display:block;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#777;margin-bottom:7px}.timeline-item p{color:#969696;line-height:1.65}
 footer{text-align:center;color:#5f5f5f;padding:34px 24px 55px;border-top:1px solid var(--line);font-size:12px;letter-spacing:1px}
+.drawer{position:fixed;inset:0;z-index:15;background:#080808;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.drawer.open{opacity:1;pointer-events:auto}.drawer nav{display:flex;flex-direction:column;gap:18px;text-align:center}
+.drawer a{font-family:'Bebas Neue',Impact,sans-serif;font-size:54px;letter-spacing:1px}.drawer a:hover{color:#999}
+.close{position:absolute;right:30px;top:30px;font-size:35px;cursor:pointer;color:#aaa}
 @media(max-width:800px){
 header{padding:24px 23px;height:78px}.monogram{font-size:52px}
-.hero{padding-bottom:100px;min-height:100svh}.hero-inner{transform:translateY(5vh)}
-h1{font-size:clamp(5.2rem,25vw,8.5rem);white-space:normal;line-height:.8}
+.hero{padding-bottom:98px;min-height:100svh}.hero-inner{transform:translateY(4vh)}
+h1{font-size:clamp(5.2rem,25vw,8.6rem);white-space:normal;line-height:.8}
 .kicker{font-size:10px;letter-spacing:2.5px}.tagline{font-size:17px;margin-top:23px}
-.content{padding:55px 22px}.cards,.projects,.poems{grid-template-columns:1fr}
-section{padding:60px 0}.card{padding:24px}
+.content{padding:0 22px}section{padding:65px 0}.cards,.projects,.poems{grid-template-columns:1fr}.card{padding:24px}
+.drawer a{font-size:47px}
 }
 </style>
 </head>
@@ -62,8 +59,19 @@ section{padding:60px 0}.card{padding:24px}
 <div class="page">
 <header>
   <a class="monogram" href="#top" aria-label="Home">A</a>
-  <a class="menu" href="#about" aria-label="Explore"><span></span><span></span></a>
+  <a class="menu" href="#" aria-label="Open menu" onclick="openMenu();return false"><span></span><span></span></a>
 </header>
+
+<div class="drawer" id="drawer">
+  <div class="close" onclick="closeMenu()">×</div>
+  <nav>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#learning" onclick="closeMenu()">Learning</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#poetry" onclick="closeMenu()">Poetry</a>
+    <a href="#contact" onclick="closeMenu()">Find Me</a>
+  </nav>
+</div>
 
 <main>
 <section class="hero" id="top">
@@ -79,7 +87,12 @@ section{padding:60px 0}.card{padding:24px}
 <section id="about">
   <div class="section-kicker">01 / About</div>
   <div class="section-title">A little about me</div>
-  <p class="intro">I’m studying Information Technology and exploring programming, Python, web development, software and practical IT. Alongside technology, I write poetry — mostly when a thought feels too complicated to explain any other way.</p>
+  <p class="intro">I’m Abiral, an IT student learning how to turn ideas into things I can actually build. I’m interested in programming, websites, software and the small details that make a project feel like my own. And outside the screen, I write — usually when a thought stays in my head longer than it should.</p>
+  <div class="timeline">
+    <div class="timeline-item"><strong>Right now</strong><p>Learning, experimenting and slowly getting better at coding and web development.</p></div>
+    <div class="timeline-item"><strong>Along the way</strong><p>Java, C#, Python, HTML, CSS, networking and a lot of trial, error and fixing things.</p></div>
+    <div class="timeline-item"><strong>The other side</strong><p>Poetry, reflection and putting feelings or questions into words.</p></div>
+  </div>
 </section>
 
 <section id="learning">
@@ -99,7 +112,7 @@ section{padding:60px 0}.card{padding:24px}
     <article class="project"><h3>Food Delivery Management System</h3><p>A console-based project covering menus, food items, delivery staff and object-oriented programming.</p></article>
     <article class="project"><h3>Community Library</h3><p>A student project exploring a practical library system and software structure.</p></article>
     <article class="project"><h3>Web & Programming Practice</h3><p>Coursework and smaller exercises across HTML, CSS, Java, C# and programming fundamentals.</p></article>
-    <article class="project"><h3>More to come</h3><p>This portfolio will keep changing as I learn, build and experiment.</p></article>
+    <article class="project"><h3>Still building</h3><p>This portfolio is part of the process — I’ll keep adding projects as I learn more.</p></article>
   </div>
   <div class="contact"><a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a></div>
 </section>
@@ -107,7 +120,7 @@ section{padding:60px 0}.card{padding:24px}
 <section id="poetry">
   <div class="section-kicker">04 / Writing</div>
   <div class="section-title">Poetry</div>
-  <p class="intro" style="margin-bottom:10px">A few thoughts that became poems.</p>
+  <p class="intro">A few thoughts that became poems.</p>
   <div class="poems">
     <article class="poem"><h3>Between the Past and Present</h3><p>The head that refuses to live in the present,
 the heart that echoes the voices already heard.</p></article>
@@ -132,11 +145,17 @@ Teach us to live with our soul light.</p></article>
   <div class="section-kicker">05 / Elsewhere</div>
   <div class="section-title">Find me</div>
   <p class="intro">More work, experiments and updates will live here as I keep building.</p>
-  <div class="contact"><a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></div>
+  <div class="contact">
+    <a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
 </section>
 </div>
 </main>
 <footer>ABIRAL · LEARNING, BUILDING & WRITING</footer>
 </div>
+<script>
+function openMenu(){document.getElementById('drawer').classList.add('open')}
+function closeMenu(){document.getElementById('drawer').classList.remove('open')}
+</script>
 </body>
 </html>
