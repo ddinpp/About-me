@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal portfolio of Abiral — IT student, programmer and poet.">
+<title>Abiral — About Me</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b0d12;color:#f5f7fb;line-height:1.65}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid #222733}
+.nav-inner{max-width:1050px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.5px}
+.nav-links{display:flex;gap:18px;font-size:.92rem;color:#b9c0ce}
+.nav-links a:hover{color:#fff}
+main{max-width:1050px;margin:auto;padding:0 22px}
+.hero{min-height:88vh;display:flex;align-items:center;padding:80px 0}
+.eyebrow{color:#98a2b3;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;margin-bottom:16px}
+h1{font-size:clamp(3rem,9vw,6.3rem);line-height:.95;letter-spacing:-4px;max-width:850px}
+.gradient{background:linear-gradient(135deg,#fff,#aeb8ff 55%,#d5a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:690px;color:#b5bcc9;font-size:1.12rem;margin-top:25px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 18px;border:1px solid #303644;border-radius:999px;background:#151923}
+.btn.primary{background:#fff;color:#0b0d12;border-color:#fff;font-weight:700}
+section{padding:80px 0;border-top:1px solid #202530}
+.section-title{font-size:2rem;margin-bottom:28px}
+.section-intro{color:#aeb6c5;max-width:720px;margin-top:-15px;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#11141b;border:1px solid #242a35;border-radius:20px;padding:24px}
+.card h3{margin-bottom:9px}
+.card p{color:#abb3c1}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tag{font-size:.82rem;padding:7px 10px;border:1px solid #2d3441;border-radius:999px;color:#cbd2df;background:#151923}
+.project{min-height:170px}
+.poems{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.poem{background:#10131a;border:1px solid #272d39;border-radius:20px;padding:26px}
+.poem h3{font-family:Georgia,serif;font-size:1.3rem;margin-bottom:15px}
+.poem p{white-space:pre-line;color:#d4d8e1;font-family:Georgia,serif;font-size:1.02rem}
+.quote{border-left:3px solid #9ea8ff;padding-left:18px;color:#ced4df}
+.contact{display:flex;gap:12px;flex-wrap:wrap}
+footer{text-align:center;color:#7f8795;padding:35px 22px 55px;font-size:.9rem}
+@media(max-width:800px){.grid,.poems{grid-template-columns:1fr}.nav-links{display:none}.hero{min-height:75vh;padding:55px 0}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">ABIRAL.</div>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#learning">Learning</a><a href="#projects">Projects</a><a href="#poetry">Poetry</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="top">
+  <div>
+    <div class="eyebrow">IT Student • Programmer • Writer</div>
+    <h1>Hi, I'm <span class="gradient">Abiral.</span></h1>
+    <p>I’m an IT student building my skills in programming and web development while keeping a space for the other side of me — writing, thinking, and turning thoughts into poems.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#about">Get to know me</a>
+      <a class="btn" href="#poetry">Read my poems</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">About Me</div>
+  <p class="section-intro">A little about the person behind the code.</p>
+  <div class="card">
+    <p>I’m currently studying Information Technology and exploring the parts of tech that interest me most — programming, Python, websites, software and the process of turning an idea into something that actually works.</p>
+    <br>
+    <p>Outside of technology, I enjoy writing. Poetry is where I put thoughts that are sometimes difficult to explain directly. This page is a small collection of what I’m learning, building and writing along the way.</p>
+  </div>
+</section>
+
+<section id="learning">
+  <div class="section-title">What I'm Studying</div>
+  <p class="section-intro">The areas I’m currently developing.</p>
+  <div class="grid">
+    <div class="card"><h3>🐍 Python</h3><p>Learning programming fundamentals, problem solving, logic and building small programs.</p><div class="tags"><span class="tag">Python</span><span class="tag">Logic</span><span class="tag">Problem solving</span></div></div>
+    <div class="card"><h3>🌐 Web Development</h3><p>Learning how websites are structured, styled and made interactive.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Web</span></div></div>
+    <div class="card"><h3>💻 Programming & IT</h3><p>Exploring software development, programming concepts, networking and practical IT work.</p><div class="tags"><span class="tag">Java</span><span class="tag">C#</span><span class="tag">Networking</span></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-title">Projects & Practice</div>
+  <p class="section-intro">A growing record of things I’ve worked on while studying.</p>
+  <div class="grid">
+    <div class="card project"><h3>🍔 Food Delivery Management System</h3><p>A console-based programming project focused on menus, food items, delivery staff and object-oriented programming concepts.</p></div>
+    <div class="card project"><h3>📚 Community Library</h3><p>A student project exploring software structure, features and a practical web/software idea for managing a community library.</p></div>
+    <div class="card project"><h3>🧩 Web & Programming Practice</h3><p>Small exercises and coursework covering HTML, CSS, Java, C#, programming fundamentals and IT concepts.</p></div>
+  </div>
+  <div class="buttons">
+    <a class="btn primary" href="https://github.com/ddinpp" target="_blank" rel="noopener">View my GitHub ↗</a>
+  </div>
+</section>
+
+<section id="poetry">
+  <div class="section-title">Poetry</div>
+  <p class="section-intro quote">“Sometimes the things we cannot explain are the things we end up writing.”</p>
+  <div class="poems">
+    <article class="poem"><h3>Between the Past and Present</h3><p>The head that refuses to live in the present,
+the heart that echoes the voices already heard.</p></article>
+    <article class="poem"><h3>Thank You, Pain</h3><p>I thank the tears because without them happiness would lose its meaning,
+I thank noise because without it silence would lose its meaning.
+From where we suffer to where we rest, we shall too thank the steps.</p></article>
+    <article class="poem"><h3>What Was Never Told</h3><p>The hands somehow explained it,
+And the paper understood what was never told.</p></article>
+    <article class="poem"><h3>The Unanswered Within</h3><p>My unsolved questions give me peace, they give me reason, they give me life.</p></article>
+    <article class="poem"><h3>Time Knows No Waiting</h3><p>Tumhe lagta hai zindagi baadi lambi hai
+Kabhi intezaar mein waqt guzarke dekho.</p></article>
+    <article class="poem"><h3>What We Hold</h3><p>We hold too tight,
+till our last fight.
+But we miss the sight,
+which were just as right,
+which just have might.
+Teach us to live with our soul light.</p></article>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">Find Me</div>
+  <p class="section-intro">A few places to follow what I’m building or share with me.</p>
+  <div class="contact">
+    <a class="btn" href="https://github.com/ddinpp" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+  </div>
+</section>
+</main>
+
+<footer>Made by Abiral · Learning, building & writing.</footer>
+</body>
+</html>
